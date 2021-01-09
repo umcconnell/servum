@@ -1,0 +1,21 @@
+name: docs
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+
+            - name: Cargo docs
+              run: cargo doc --document-private-items --release
+
+            - name: Deploy 🚀
+              uses: peaceiris/actions-gh-pages@v3
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  publish_dir: target/doc/
