@@ -36,7 +36,7 @@ Then run `servum` inside the directory you want to serve :rocket:.
 ## Installation
 
 Pre-built binaries for Windows, Mac and Linux can be found under the
-[Releases Tab](https://github.com/umcconnell/changers/releases).
+[Releases Tab](https://github.com/umcconnell/servum/releases).
 
 ### Linux
 
