@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["guess_mime_type","Guess a file's MIME type based on it's extension"]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["decode_percents","Decode percent-encoded URIs"],["from_hex","Try decoding hex encoding after `%` in URIs."],["normalize_path","Normalize a file path"],["process_path","Process a file path"]]});

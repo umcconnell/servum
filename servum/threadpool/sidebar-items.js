@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["Message","Message to a `threadpool::Worker`"]],"mod":[["message",""],["threadpool",""],["worker",""]],"struct":[["ThreadPool","ThreadPool for multi-thread computations."],["Worker","ThreadPool Worker"]]});

@@ -1,0 +1,3 @@
+(function() {var implementors = {};
+implementors["servum"] = [{"text":"impl&lt;'a&gt; Debug for CliError&lt;'a&gt;","synthetic":false,"types":[]},{"text":"impl&lt;'a&gt; Debug for HTTPRequest&lt;'a&gt;","synthetic":false,"types":[]},{"text":"impl Debug for HTTPRequestError","synthetic":false,"types":[]},{"text":"impl&lt;'a&gt; Debug for HTTPResponse&lt;'a&gt;","synthetic":false,"types":[]},{"text":"impl&lt;'a&gt; Debug for HTTPStatus&lt;'a&gt;","synthetic":false,"types":[]}];
+if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()

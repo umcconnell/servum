@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["cli",""],["err",""],["tui",""]],"struct":[["Config","Rudimentary argument parsing and user configuration."]]});

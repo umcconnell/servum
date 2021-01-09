@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Config","Rudimentary argument parsing and user configuration."]]});

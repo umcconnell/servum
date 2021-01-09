@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["ThreadPool","ThreadPool for multi-thread computations."]]});

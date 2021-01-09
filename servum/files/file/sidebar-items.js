@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["File","Wrapper struct around [`std::fs::DirEntry`]"]]});

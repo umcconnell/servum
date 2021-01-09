@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["HTTPStatus","A simple struct representing HTTP status responses."]]});

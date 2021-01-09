@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["HTTPRequest","A struct used to represent an HTTP request."]]});
