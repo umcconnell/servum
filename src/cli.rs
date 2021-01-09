@@ -1,6 +1,6 @@
 //! CLI arguments parser and help
-mod cli;
+mod config;
 mod err;
 pub mod tui;
 
-pub use cli::Config;
+pub use config::Config;
