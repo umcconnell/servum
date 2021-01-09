@@ -1,1 +1,1 @@
-initSidebarItems({"mod":[["cli","CLI arguments parser and help"],["files","Filesystem and path utilities"],["http","HTTP utilities"],["threadpool","ThreadPool implementation from the Rust Book"]]});
+initSidebarItems({"mod":[["cli","CLI arguments parser and help"],["files","Filesystem and path utilities"],["http","HTTP utilities"],["multiprocessing","ThreadPool implementation from the Rust Book"]]});
