@@ -182,7 +182,7 @@
         <span class="kw">let</span> <span class="ident">filepath</span> <span class="op">=</span>
             <span class="ident">Path</span>::<span class="ident">new</span>(<span class="ident">first_line</span>.<span class="ident">next</span>().<span class="ident">ok_or</span>(<span class="ident">HTTPRequestError</span>::<span class="ident">NoPath</span>)<span class="question-mark">?</span>);
 
-        <span class="kw">if</span> <span class="kw">let</span> <span class="prelude-val">None</span> <span class="op">=</span> <span class="ident">first_line</span>.<span class="ident">next</span>() {
+        <span class="kw">if</span> <span class="ident">first_line</span>.<span class="ident">next</span>().<span class="ident">is_none</span>() {
             <span class="kw">return</span> <span class="prelude-val">Err</span>(<span class="ident">HTTPRequestError</span>::<span class="ident">NoPath</span>);
         }
 

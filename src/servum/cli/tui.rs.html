@@ -66,7 +66,6 @@
 <span id="63">63</span>
 <span id="64">64</span>
 <span id="65">65</span>
-<span id="66">66</span>
 </pre><div class="example-wrap"><pre class="rust ">
 <span class="kw">use</span> <span class="kw">crate</span>::{
     <span class="ident">cli</span>::<span class="ident">Config</span>,
@@ -89,7 +88,7 @@ _(__  )/  __/  /   __ |/ // /_/ /_  / / / / /
 <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">print_info</span>() {
     <span class="macro">println</span><span class="macro">!</span>(<span class="string">&quot;To exit, just press Ctrl/Cmd+C at any time&quot;</span>);
     <span class="macro">println</span><span class="macro">!</span>(<span class="string">&quot;To get help, pass --help&quot;</span>);
-    <span class="macro">println</span><span class="macro">!</span>(<span class="string">&quot;&quot;</span>);
+    <span class="macro">println</span><span class="macro">!</span>();
 }
 
 <span class="doccomment">/// Print information about the current user [`Config`] to the console.</span>
@@ -99,18 +98,17 @@ _(__  )/  __/  /   __ |/ // /_/ /_  / / / / /
         <span class="string">&quot;Server listening at http://{}:{}&quot;</span>,
         <span class="ident">config</span>.<span class="ident">address</span>, <span class="ident">config</span>.<span class="ident">port</span>
     );
-    <span class="macro">println</span><span class="macro">!</span>(<span class="string">&quot;&quot;</span>);
+    <span class="macro">println</span><span class="macro">!</span>();
 }
 
 <span class="doccomment">/// Print table header of verbose output to the console.</span>
 <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">print_verbose_header</span>() {
     <span class="macro">println</span><span class="macro">!</span>(
-        <span class="string">&quot;[{req_method: &lt;6} {req_path: &lt;32}] -&gt; \t{res_code: &lt;6} {res_msg: &lt;24} {time}μs&quot;</span>,
+        <span class="string">&quot;[{req_method: &lt;6} {req_path: &lt;32}] -&gt; \t{res_code: &lt;6} {res_msg: &lt;24} Time in μs&quot;</span>,
         <span class="ident">req_method</span> <span class="op">=</span> <span class="string">&quot;Method&quot;</span>,
         <span class="ident">req_path</span> <span class="op">=</span> <span class="string">&quot;/path/to/file/...&quot;</span>,
         <span class="ident">res_code</span> <span class="op">=</span> <span class="string">&quot;Code&quot;</span>,
         <span class="ident">res_msg</span> <span class="op">=</span> <span class="string">&quot;Message&quot;</span>,
-        <span class="ident">time</span> <span class="op">=</span> <span class="string">&quot;Time in &quot;</span>
     );
     <span class="macro">println</span><span class="macro">!</span>(<span class="string">&quot;{}&quot;</span>, <span class="string">&quot;-&quot;</span>.<span class="ident">repeat</span>(<span class="number">90</span>));
 }
