@@ -4,7 +4,7 @@ use std::sync::Arc;
 use std::time::Instant;
 
 use servum::cli::{self, tui};
-use servum::{http, http::HTTPRequest, threadpool::ThreadPool};
+use servum::{http, http::HTTPRequest, multiprocessing::ThreadPool};
 
 fn main() {
     tui::print_logo();

@@ -1,7 +1,7 @@
 use std::sync::{mpsc, Arc, Mutex};
 use std::thread;
 
-use crate::threadpool::message::Message;
+use crate::multiprocessing::message::Message;
 
 /// ThreadPool Worker
 pub struct Worker {

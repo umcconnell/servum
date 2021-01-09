@@ -1,7 +1,7 @@
 use std::sync::{mpsc, Arc, Mutex};
 
-use crate::threadpool::message::Message;
-use crate::threadpool::worker::Worker;
+use crate::multiprocessing::message::Message;
+use crate::multiprocessing::worker::Worker;
 
 /// ThreadPool for multi-thread computations.
 ///
