@@ -19,7 +19,7 @@ _(__  )/  __/  /   __ |/ // /_/ /_  / / / / /
 pub fn print_info() {
     println!("To exit, just press Ctrl/Cmd+C at any time");
     println!("To get help, pass --help");
-    println!("");
+    println!();
 }
 
 /// Print information about the current user [`Config`] to the console.
@@ -29,18 +29,17 @@ pub fn print_config(config: Arc<Config>) {
         "Server listening at http://{}:{}",
         config.address, config.port
     );
-    println!("");
+    println!();
 }
 
 /// Print table header of verbose output to the console.
 pub fn print_verbose_header() {
     println!(
-        "[{req_method: <6} {req_path: <32}] -> \t{res_code: <6} {res_msg: <24} {time}μs",
+        "[{req_method: <6} {req_path: <32}] -> \t{res_code: <6} {res_msg: <24} Time in μs",
         req_method = "Method",
         req_path = "/path/to/file/...",
         res_code = "Code",
         res_msg = "Message",
-        time = "Time in "
     );
     println!("{}", "-".repeat(90));
 }

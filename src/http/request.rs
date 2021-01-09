@@ -62,7 +62,7 @@ impl<'a> HTTPRequest<'a> {
         let filepath =
             Path::new(first_line.next().ok_or(HTTPRequestError::NoPath)?);
 
-        if let None = first_line.next() {
+        if first_line.next().is_none() {
             return Err(HTTPRequestError::NoPath);
         }
 

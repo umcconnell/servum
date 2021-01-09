@@ -73,7 +73,7 @@ impl Config {
         let mut conf = Config::default();
 
         // Insert base-dir if first argument is <BASE_DIR>
-        if args.len() > 0 && !args[0].starts_with('-') {
+        if !args.is_empty() && !args[0].starts_with('-') {
             args.insert(0, String::from("--base-dir"));
         }
 
@@ -105,7 +105,7 @@ impl Config {
         args: &'a [String],
         conf: &mut Config,
     ) -> Result<bool, CliError<'a>> {
-        let mut it = args.into_iter();
+        let mut it = args.iter();
 
         while let Some(el) = it.next() {
             let mut el = el.as_str();
@@ -138,8 +138,8 @@ impl Config {
                     el = temp.next().unwrap();
                     temp.next()
                 }
-            }
-            .ok_or(CliError::MissingVal(el))?;
+            };
+            let val = val.ok_or(CliError::MissingVal(el))?;
 
             match el {
                 "--base-dir" => {

@@ -101,10 +101,7 @@ pub fn handle_connection<'a>(
 
     let filename = files::path::process_path(req_filename, &config.base_dir);
 
-    let is_sub = &filename
-        .ancestors()
-        .find(|a| a == &config.base_dir)
-        .is_some();
+    let is_sub = &filename.ancestors().any(|a| a == config.base_dir);
 
     if !is_sub {
         return HTTPResponse::from(io::Error::new(
