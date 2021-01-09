@@ -29,10 +29,10 @@ fn main() {
         let verbose = config.verbose;
         let conf = config.clone();
 
+        #[allow(clippy::unused_io_amount)]
         pool.execute(move || {
             let mut buffer = [0; 1024];
 
-            #[allow(clippy::unused_io_amount)]
             stream.read(&mut buffer).unwrap();
 
             let timer = Instant::now();
