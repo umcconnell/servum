@@ -12,7 +12,7 @@ supports multi-threaded, parallel processing of incoming requests.
 ## Quickstart
 
 Install servum from the
-[Releases Tab](https://github.com/umcconnell/changers/releases).
+[Releases Tab](https://github.com/umcconnell/servum/releases).
 
 Then run `servum` inside the directory you want to serve :rocket:.
 
