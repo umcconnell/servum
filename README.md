@@ -49,6 +49,17 @@ chmod a+x ./servum
 sudo mv ./servum /usr/bin/
 ```
 
+### Windows
+
+To install the binary on windows, you can move it to `C:\Tools` as recommended
+in this StackExchange question:
+https://superuser.com/questions/532460/where-to-install-small-programs-without-installers-on-windows
+
+If you would like to have a shortcut in the start menu, you can right-click the
+.exe file and select "Pin to start" before running it. See this stack-exchange
+question for more info:
+https://superuser.com/questions/1189406/ctrlshiftenter-to-run-as-admin-works-on-desktop-app-programs-but-not-run?answertab=votes#tab-top
+
 ### Cargo
 
 If you're a **Rust programmer**, servum can be installed _via_ cargo.
