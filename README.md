@@ -182,3 +182,4 @@ documentation effort. This project is based off Chapter 12 of the Rust Book
 -   https://doc.rust-lang.org/book/
 -   https://blog.burntsushi.net/rust-error-handling/
 -   https://www.reddit.com/r/rust/comments/gj8inf/rust_structuring_and_handling_errors_in_2020/
+-   https://alican.codes/rust-github-actions/
