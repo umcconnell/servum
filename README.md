@@ -54,12 +54,13 @@ sudo mv ./servum /usr/bin/
 If you're a **Rust programmer**, servum can be installed _via_ cargo.
 
 ```bash
-cargo install --git https://github.com/umcconnell/servum.git
+cargo install --git https://github.com/umcconnell/servum.git --branch main --bin cargo-servum
 ```
 
 ## Usage
 
-To get started, just run `servum` in the directory you want to serve.
+To get started, just run `servum`, or `cargo servum` if you've installed using
+cargo, in the directory you want to serve.
 
 ```
 servum [optional: BASE_DIR] [optional: OPTIONS]

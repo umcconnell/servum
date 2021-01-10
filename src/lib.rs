@@ -18,7 +18,7 @@
 //! servum can be installed using cargo:
 //!
 //! ```bash
-//! cargo install --git https://github.com/umcconnell/servum.git
+//! cargo install --git https://github.com/umcconnell/servum.git --branch main --bin cargo-servum
 //! ```
 //!
 //! # Usage
