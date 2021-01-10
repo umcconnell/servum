@@ -21,7 +21,7 @@ jobs:
                   override: true
 
             - name: Build
-              run: cargo build --release && strip target/release/servum && mv target/release/servum target/release/servum_amd64
+              run: cargo build --release --bin servum && strip target/release/servum && mv target/release/servum target/release/servum_amd64
 
             - name: Release
               uses: softprops/action-gh-release@v1
@@ -45,7 +45,7 @@ jobs:
                   override: true
 
             - name: Build
-              run: cargo build --release
+              run: cargo build --release --bin servum
 
             - name: Release
               uses: softprops/action-gh-release@v1
@@ -70,7 +70,7 @@ jobs:
                   override: true
 
             - name: Build for mac
-              run: cargo build --release && strip target/release/servum && mv target/release/servum target/release/servum_darwin
+              run: cargo build --release --bin servum && strip target/release/servum && mv target/release/servum target/release/servum_darwin
 
             - name: Release
               uses: softprops/action-gh-release@v1
