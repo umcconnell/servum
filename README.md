@@ -7,7 +7,7 @@
 Servum is a simple static server. Not more. Not less.
 
 It is fast[\*](#speed) and comes with no external dependencies. Servum also
-supports multi-threaded, parallel processing of incoming requests.
+supports multi-threaded, parallel processing of incoming requests. HTTP only.
 
 ## Quickstart
 
