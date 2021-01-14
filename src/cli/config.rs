@@ -72,17 +72,16 @@ impl Config {
         let mut args: Vec<String> = env::args().skip(1).collect();
         let mut conf = Config::default();
 
-        if !args.is_empty() {
-            // Skip first element (executable name, i.e. "servum") if being
-            // invoked from cargo
-            if args[0] == "servum" && env::var("CARGO").is_ok() {
-                args.remove(0);
-            }
+        // Skip first element (executable name, i.e. "servum") if being
+        // invoked from cargo
+        if !args.is_empty() && args[0] == "servum" && env::var("CARGO").is_ok()
+        {
+            args.remove(0);
+        }
 
-            // Insert base-dir if first argument is <BASE_DIR>
-            if !args[0].starts_with('-') {
-                args.insert(0, String::from("--base-dir"));
-            }
+        // Insert base-dir if first argument is <BASE_DIR>
+        if !args.is_empty() && !args[0].starts_with('-') {
+            args.insert(0, String::from("--base-dir"));
         }
 
         let showed_help = Config::parse_args(&args, &mut conf).unwrap_or_else(|e| {

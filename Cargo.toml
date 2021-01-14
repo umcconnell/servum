@@ -1,6 +1,6 @@
 [package]
 name = "servum"
-version = "1.0.2"
+version = "1.0.3"
 authors = ["Ulysse McConnell <ulysse.mcconnell+dev@protonmail.com>"]
 edition = "2018"
 license = "MIT OR Apache-2.0"
