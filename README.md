@@ -40,7 +40,7 @@ Pre-built binaries for Windows, Mac and Linux can be found under the
 
 ### Linux
 
-To install the binary systemwide on linux, make sure it is executable before
+To install the binary system-wide on Linux, make sure it is executable before
 moving it to `usr/bin`:
 
 ```bash
